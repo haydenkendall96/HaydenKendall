@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Hayden Kendall | Programming</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+	
 </head>
 
 <body>
@@ -77,21 +78,76 @@
 		</tr>
 		<tr>
 		<th>
-		IN PROGRESS:
+		CSC 412 - Programming Assignment 1
+		<BR>
+		May 22nd, 2020
 		</th>
 		</tr>
 		<tr>
 		<td>
-		<img width = "560" height = "315" src="lstm.png" class="center"/>
-		</iframe>
+		
+		<div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+			<a href = "step1.png">
+            <img src="step1.png" style="width:100%">
+            </a>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <a href = "step2.png">
+            <img src="step2.png" style="width:100%">
+            </a>
+            
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+			<a href = "step3.png">
+            <img src="step3.png" style="width:100%">
+            </a>
+        </div>
+
+		<div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+			<a href = "step4.png">
+            <img src="step4.png" style="width:100%">
+            </a>
+        </div>
+
+		<div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+			<a href = "step5.png">
+            <img src="step5.png" style="width:100%">
+            </a>
+        </div>
+		
+		 <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+			<a href = "step6.png">
+            <img src="step6.png" style="width:100%">
+            </a>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+		
 		</td>
 		<td>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		</td>
 		<td>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now that I have my personal website running, and I've read some more neural network material, I can get back to a project I've been looking at for some time.
-		My goal is to build a sequence to sequence model for a basic chatbot using Recurrent Neural Networks. More specifically using a Long Short-Term Memory Cell(LSTM) or Gated Recurrent Unit(GRU). 
-		Most likely, I'll be using a GRU to be conservative with computer power. 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This was the first assignment in the CSC 412 course: Operating Systems and Networks. The primary focus of this project was to 
+		get a first look at the Oracle VirtualBox program, set up a virtual machine of Ubuntu, learn simple Unix commands, and to get an idea for the format of 
+		future assignments. The assignment started out by asking for a series of images to display adequate following of the instructions. The first image being that the virtual machine has 
+		enough memory, processors allocated, and was overall setup correctly. The instructions of the assignment call for various uses and exposure to basic Unix commands that one may need such as
+		making directories, creating .txt files while passing data to them, deleting files, and editing in a nano text editor.  The command history is then pulled and stored in a history.txt files that is 
+		then edited in the nano editor to add my full name as the first line. <a href = "history.txt">History</a> 
+		
 		</td>
 		</tr>
 	</table>
@@ -212,6 +268,32 @@
 		
 	</table>
 	</center>
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+</script>
 
 </body>
 
